@@ -1,0 +1,107 @@
+
+.Container{
+	display: flex; 
+	justify-content: space-around;
+    align-items: center;
+	height: 100%;
+}
+
+header>h1 {
+	color: blue;
+	text-align: center;
+}
+header>h1:hover {
+	color: red;
+	background-color: rgba(red, green, blue, alpha);
+}
+h3{
+	text-align: right;
+	position: relative;
+}
+.menu{
+	border-width: 2px;
+	background-color: gray;
+	border: solid black 3px;
+	margin: 5px;
+	font-size: 17px;
+    box-sizing: border-box;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	box-shadow: 5px 5px 10px black;
+}
+
+.menu{
+	width:360px;
+	height: 200px;
+	display: inline-block;
+	margin: 5px;
+	position: relative;
+}
+
+footer{
+	text-align: center;
+}
+
+.Pupusa#one{
+	margin-left: auto;
+	width:80px;
+	margin-top: 0px;
+	padding: 5px;
+	border: solid;
+	background-color: rgb(82, 2, 2);
+}
+
+
+.Pupusa#second{
+	margin-left: auto;
+	width:80px;
+	margin-top: 0px;
+	padding: 5px;
+	border: solid;	
+	background-color: rgb(174, 91, 91);
+}
+
+.Pupusa#three{
+	margin-left: auto;
+	width:80px;
+	margin-top: 0px;
+	padding: 5px;
+	border: solid;
+	background-color: rgb(235, 186, 195);
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px){
+.Container{
+	flex-wrap:wrap;
+}
+#firstMen{
+	width: 48%;
+	margin:0px 5px; 
+
+}
+#secondMen{
+	width: 48%;
+	margin:0px 5px;
+}
+#threeMen {
+	width:100%;
+	margin: 20px 5px;
+
+}
+}
+
+@media (max-width: 767px) {
+  .Container {
+    font-size: 16px;
+    flex-wrap: wrap;
+}
+
+  #firstMen #secondMen #threeMen {
+    width: 100%;
+    margin:0px 5px;
+    height: 150px;
+   
+  }
+}
